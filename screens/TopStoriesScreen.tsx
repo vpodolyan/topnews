@@ -12,8 +12,6 @@ export const TopStoriesScreen: FC = () => {
   );
   const loading = useSelector((state: IAppState) => state.topStories.loading);
 
-  console.log('stories', stories);
-
   const dispatch = useDispatch();
 
   const loadStories = useCallback(() => {
